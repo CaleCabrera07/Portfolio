@@ -551,21 +551,150 @@ section .title::after {
     background: none;
 }
 
-/* footer section styling */
+/* ----- FOOTER ----- */
 footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #111;
+}
+.social ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.social ul li a .fa {
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    transition: 0.5s;
+    padding-right: 14px;
+}
+
+.social ul li a span {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+
+.social ul li a {
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.social ul li a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.social ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.social ul li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.social ul li:hover .fa {
+    color: #fff;
+}
+
+.social ul li:hover span {
+    color: #fff;
+}
+
+.social ul li:hover:nth-child(1) a {
+    background: #0e76a8;
+}
+.social ul li:hover:nth-child(1) a:before {
+    background: #0e76a8;
+}
+.social ul li:hover:nth-child(1) a:after {
+    background: #1293cf;
+}
+
+.social ul li:hover:nth-child(3) a {
+    background: #00aced;
+}
+.social ul li:hover:nth-child(3) a:before {
+    background: #097aa5;
+}
+.social ul li:hover:nth-child(3) a:after {
+    background: #53b9e0;
+}
+
+.social ul li:hover:nth-child(2) a {
+    background: #211f1f;
+}
+.social ul li:hover:nth-child(2) a:before {
+    background: #211f1f;
+}
+.social ul li:hover:nth-child(2) a:after {
+    background: #363333;
+}
+
+.social ul li:hover:nth-child(4) a {
+    background: #e4405f;
+}
+.social ul li:hover:nth-child(4) a:before {
+    background: #d81c3f;
+}
+.social ul li:hover:nth-child(4) a:after {
+    background: #e46880;
+}
+
+.copyright {
     background: #111;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
-footer span a {
+.copyright span a {
     color: var(--primary-color);
     text-decoration: none;
 }
-footer span a:hover {
+.copyright span a:hover {
     text-decoration: underline;
 }
-
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width {
@@ -651,6 +780,44 @@ footer span a:hover {
     }
 }
 
+@media (max-width: 950px) {
+    .social ul li a {
+        width: 180px;
+        height: 80px;
+    }
+    .social ul li a .fa {
+        font-size: 30px;
+        color: #262626;
+        line-height: 80px;
+        transition: 0.5s;
+        padding-right: 14px;
+    }
+
+    .social ul li a span {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 800px) {
+    .social ul li a {
+        width: 135px;
+        height: 80px;
+    }
+    .social ul li a .fa {
+        font-size: 25px;
+        color: #262626;
+        line-height: 80px;
+        transition: 0.5s;
+        padding-right: 14px;
+    }
+
+    .social ul li a span {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+}
+
 @media (max-width: 690px) {
     .max-width {
         padding: 0 23px;
@@ -666,6 +833,37 @@ footer span a:hover {
     }
     .services .serv-content .card {
         width: 100%;
+    }
+
+    .social ul li {
+        margin: 0 20px;
+    }
+
+    .social ul li a {
+        width: 80px;
+        height: 80px;
+    }
+    .social ul li a .fa {
+        font-size: 30px;
+        color: #262626;
+        padding-right: 40px;
+    }
+
+    .social ul li a span {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .social ul li a {
+        width: 60px;
+        height: 40px;
+    }
+    .social ul li a .fa {
+        font-size: 20px;
+        color: #262626;
+        line-height: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -694,5 +892,21 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+@media (max-width: 425px) {
+    .social ul {
+        flex-direction: column;
+    }
+    .social ul li a {
+        width: 60px;
+        height: 40px;
+    }
+    .social ul li a .fa {
+        font-size: 20px;
+        color: #262626;
+        line-height: 40px;
+        padding-right: 40px;
     }
 }

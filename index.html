@@ -240,11 +240,29 @@
             </div>
         </section>
 
-        <!-- teams section start -->
+        <!-- teams/Projects section start -->
         <section class="teams" id="teams">
             <div class="max-width">
                 <h2 class="title">My Projects</h2>
                 <div class="carousel owl-carousel">
+                    <!--Personal Website-->
+                    <div class="card">
+                        <div class="box">
+                            <a
+                                href="https://iamcale.netlify.app"
+                                target="_blank"
+                            >
+                                <img
+                                    src="images/profile-1.jpg"
+                                    alt="Dino Turquoise"
+                                />
+                                <div class="text">Carlos' Website</div>
+                            </a>
+                            <p>
+                                Get to know me even beyond my professional life.
+                            </p>
+                        </div>
+                    </div>
                     <!--CaCS Website-->
                     <div class="card">
                         <div class="box">
@@ -310,25 +328,6 @@
                             </p>
                         </div>
                     </div>
-
-                    <!--Personal Website-->
-                    <div class="card">
-                        <div class="box">
-                            <a
-                                href="https://iamcale.netlify.app"
-                                target="_blank"
-                            >
-                                <img
-                                    src="images/profile-1.jpg"
-                                    alt="Dino Turquoise"
-                                />
-                                <div class="text">Carlos' Website</div>
-                            </a>
-                            <p>
-                                Get to know me even beyond my professional life.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -338,6 +337,7 @@
             <div class="max-width">
                 <h2 class="title">Contact me</h2>
                 <div class="contact-content">
+                    <!--LEFT COLUMN-->
                     <div class="column left">
                         <div class="text">Get in Touch</div>
                         <p>
@@ -374,11 +374,13 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--Right COLUMN-->
                     <div class="column right">
                         <div class="text">Message me</div>
                         <form
                             class="contact-form"
-                            action="#"
+                            name="contact"
                             method="POST"
                             data-netlify="true"
                         >
@@ -388,13 +390,15 @@
                                         type="text"
                                         class="fullname"
                                         placeholder="Name"
+                                        name="name"
                                     />
                                 </div>
                                 <div class="field email">
                                     <input
-                                        type="text"
+                                        type="email"
                                         class="email-input"
                                         placeholder="Email"
+                                        name="email"
                                     />
                                 </div>
                             </div>
@@ -403,6 +407,7 @@
                                     type="text"
                                     class="subject"
                                     placeholder="Subject"
+                                    name="subject"
                                 />
                             </div>
                             <div class="field textarea">
@@ -410,7 +415,8 @@
                                     class="message"
                                     cols="30"
                                     rows="10"
-                                    placeholder="Message.."
+                                    placeholder="Message..."
+                                    name="message"
                                 ></textarea>
                             </div>
                             <div class="button-area">
@@ -429,7 +435,45 @@
         </section>
 
         <!-- footer section start -->
-        <footer>
+        <footer class="social">
+            <ul>
+                <!-- LinkedIN-->
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/carloscabrerasemidey/"
+                        target="_blank"
+                    >
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <span> - LinkedIn</span>
+                    </a>
+                </li>
+                <!-- GitHub-->
+                <li>
+                    <a href="https://github.com/CaleCabrera07" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <span> - GitHub</span>
+                    </a>
+                </li>
+                <!-- Twitter-->
+                <li>
+                    <a href="https://twitter.com/CaleCabrera07" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span> - Twitter</span>
+                    </a>
+                </li>
+                <!-- Instagram-->
+                <li>
+                    <a
+                        href="https://www.instagram.com/calecabrera07"
+                        target="_blank"
+                    >
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span> - Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <div class="copyright">
             <span
                 >Created By
                 <a href="https://github.com/CaleCabrera07" target="_blank"
@@ -438,8 +482,9 @@
                 | <span class="far fa-copyright"></span> 2020 All rights
                 reserved.</span
             >
-        </footer>
+        </div>
 
+        <!--Script-->
         <script src="./script.js"></script>
     </body>
 </html>
