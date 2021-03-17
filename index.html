@@ -63,7 +63,7 @@
         <nav class="navbar">
             <div class="max-width">
                 <div class="logo">
-                    <a href="#">Carlos <span>Cabrera.</span></a>
+                    <a href="#">Carlos <span>Cabrera</span></a>
                 </div>
                 <ul class="menu">
                     <li><a href="#home" class="menu-btn">Home</a></li>
@@ -80,6 +80,13 @@
         </nav>
 
         <!-- home section start -->
+        <video
+            id="videobg"
+            src="./images/background.mp4"
+            autoplay
+            loop
+            muted
+        ></video>
         <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
@@ -391,6 +398,7 @@
                                         class="fullname"
                                         placeholder="Name"
                                         name="name"
+                                        required
                                     />
                                 </div>
                                 <div class="field email">
@@ -399,6 +407,7 @@
                                         class="email-input"
                                         placeholder="Email"
                                         name="email"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -408,6 +417,7 @@
                                     class="subject"
                                     placeholder="Subject"
                                     name="subject"
+                                    required
                                 />
                             </div>
                             <div class="field textarea">
@@ -417,6 +427,7 @@
                                     rows="10"
                                     placeholder="Message..."
                                     name="message"
+                                    required
                                 ></textarea>
                             </div>
                             <div class="button-area">

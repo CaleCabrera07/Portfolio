@@ -171,9 +171,13 @@ section .title::after {
 }
 
 /* home section styling */
+#videobg {
+    position: fixed;
+    z-index: -1;
+}
 .home {
     display: flex;
-    background: url('images/banner.jpg') no-repeat center;
+    /* background: url('images/banner.jpg') no-repeat center; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -181,6 +185,7 @@ section .title::after {
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .home .max-width {
     margin: auto 0 auto 30px;
 }
@@ -218,6 +223,9 @@ section .title::after {
 }
 
 /* about section styling */
+.about {
+    background-color: #fff;
+}
 .about .title::after {
     content: 'who I am';
 }
@@ -310,6 +318,9 @@ section .title::after {
 
 /* skills section styling */
 
+.skills {
+    background-color: #fff;
+}
 .skills .title::after {
     content: 'what I know';
 }
@@ -456,6 +467,9 @@ section .title::after {
 }
 
 /* contact section styling */
+.contact {
+    background-color: #fff;
+}
 .contact .title::after {
     content: "let's talk";
 }
@@ -896,6 +910,36 @@ footer {
 }
 
 @media (max-width: 425px) {
+    .navbar .logo a {
+        font-size: 30px;
+    }
+
+    .about .about-content .right .text {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .about .about-content .right p {
+        margin-bottom: 25px;
+    }
+
+    .about .about-content .left img {
+        height: auto;
+        width: 80%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+    .contact .contact-content .left p {
+        margin-bottom: 20px;
+    }
+    section .title::after {
+        font-size: 1rem;
+    }
+
+    .contact .contact-content .info .sub-title {
+        font-size: 0.9rem;
+    }
+
     .social ul {
         flex-direction: column;
     }
