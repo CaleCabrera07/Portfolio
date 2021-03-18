@@ -382,7 +382,7 @@ section .title::after {
     width: 90%;
 }
 .skills-content .right .css::before {
-    width: 60%;
+    width: 75%;
 }
 .skills-content .right .js::before {
     width: 85%;
@@ -912,6 +912,11 @@ footer {
 @media (max-width: 425px) {
     .navbar .logo a {
         font-size: 30px;
+    }
+
+    #videobg {
+        position: fixed;
+        z-index: -1;
     }
 
     .about .about-content .right .text {
