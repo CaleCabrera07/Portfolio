@@ -70,3 +70,52 @@ $(document).ready(function () {
         },
     });
 });
+
+//AUDIO VOLUME
+var vid = document.getElementById('backgroundMusic');
+function setVolume() {
+    vid.volume = 0.05;
+}
+setVolume();
+
+//GSAP ANIMATION
+gsap.registerPlugin(ScrollTrigger);
+gsap.from('.about-content', {
+    scrollTrigger: '.about-content',
+    duration: 1.5,
+    opacity: 1,
+    x: -150,
+    stagger: 0.2,
+});
+
+gsap.from('.serv-content', {
+    scrollTrigger: '.serv-content',
+    duration: 1.5,
+    opacity: 1,
+    x: -250,
+    stagger: 0.2,
+});
+
+gsap.from('.skills-content', {
+    scrollTrigger: '.skills-content',
+    duration: 1.5,
+    opacity: 1,
+    x: -250,
+    stagger: 0.2,
+});
+
+gsap.from('.carousel', {
+    scrollTrigger: '.carousel',
+    duration: 1.5,
+    opacity: 1,
+    x: -250,
+    stagger: 0.2,
+});
+
+gsap.from('.contact-content', {
+    scrollTrigger: '.contact-content',
+    duration: 1.5,
+    opacity: 1,
+    x: -250,
+    stagger: 0.2,
+});
