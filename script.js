@@ -76,6 +76,7 @@ var vid = document.getElementById('backgroundMusic');
 function setVolume() {
     vid.volume = 0.05;
 }
+vid.play();
 setVolume();
 
 //GSAP ANIMATION
